@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900" rel="stylesheet" />
+</head>
+<body>
+  <div class="progressbar">
+    <div class="progressbar-line"></div>
+    <div class="progressbar-point">1</div>
+    <div class="progressbar-point">2</div>
+    <div class="progressbar-point">3</div>
+  </div>
+
+  <form data-multi-step class="multi-step-form">
+    <div class="card" data-step>
+      <div class="card-header">
+        <h3 class="step-title">This is step 1</h3>
+        <p class="form-header-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, non?</p>
+      </div>
+
+      <div class="card-inputs">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input class='form-input' type="email" name="email" id="email">
+        </div>
+  
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input class='form-input' type="password" name="password" id="password">
+        </div>
+      </div>
+      
+
+      <div class="form-buttons">
+        <button class="form-btn" type="button" data-next>Next</button>
+      </div>
+    </div>
+
+    <div class="card hide " data-step>
+      <div class="card-header">
+        <h3 class="step-title">This is step 2</h3>
+        <p class="form-header-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, non?</p>
+      </div>
+
+      <div class="card-inputs">
+        <div class="form-group">
+          <label for="adress">Adress</label>
+          <input class='form-input' type="text" name="adress" id="adress">
+        </div>
+        
+        <div class="form-group">
+        <label for="city">City</label>
+        <input class='form-input' type="text" name="city" id="city">
+      </div>
+
+      <div class="form-group">
+        <label for="zipcode">Zip Code</label>
+        <input class='form-input' type="text" name="zipcode" id="zipcode">
+      </div>
+    </div>
+
+      <div class="form-buttons">
+        <button class="form-btn" type="button" data-previous>Previous</button>
+        <button class="form-btn" type="button" data-next>Next</button>
+      </div>
+    </div>
+
+    <div class="card hide" data-step>
+      <div class="card-header">
+        <h3 class="step-title">This is step 3</h3>
+        <p class="form-header-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, non?</p>
+      </div>
+
+      <div class="card-inputs"> 
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input class='form-input' type="text" name="firstName" id="firstName">
+        </div>
+        
+        <div class="form-group">
+          <label for="lastName">Last Name</label>
+          <input class='form-input' type="text" name="lastName" id="lastName">
+        </div>
+      </div>
+
+
+      <div class="form-buttons">
+        <button class="form-btn" type="button" data-previous>Previous</button>
+        <button class="form-btn" type="submit">Submit</button>
+      </div>
+    </div>
+  </form>
+
+</body>
+</html>

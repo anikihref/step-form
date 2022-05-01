@@ -1,0 +1,187 @@
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background: linear-gradient(180deg, #e66465, #9198e5);
+  
+}
+
+* {
+  font-family: 'Montserrat';
+}
+
+
+
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 10px 10px 30px 10px;
+  margin: 0 auto;
+  animation: fade 200ms ease-in-out forwards;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: .5rem;
+  gap: .25em;
+}
+
+.form-group:last-child {
+  margin: 0;
+}
+
+.form-group > label {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.card-inputs {
+  flex: 1 1 auto;
+  margin-bottom: 30px;
+}
+
+.form-input {
+  max-width: 60%;
+  border: 2px solid gray;
+  font-size: 1rem;
+  padding: 8px 10px;
+  outline: none;
+}
+
+.card-header {
+  margin-bottom: 20px;
+}
+
+
+.form-header-text {
+  text-align: center;
+  font-size: .8rem;
+  color: gray;
+  margin: 0;
+}
+
+
+.step-title {
+  margin: 0;
+  margin-bottom: 10px;
+  text-align: center;
+
+}
+
+.form-btn {
+  min-width: 110px;
+  color: #fff;
+  background-color: rgb(44, 145, 63);
+  height: 40px;
+  cursor: pointer;
+  border: 0;
+}
+
+.form-btn:nth-child(2) {
+  margin-left: 15px;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.multi-step-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 400px;
+  height: 450px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.progressbar {
+  display: flex;
+  justify-content: space-between;
+  width: 320px;
+  position: relative;
+}
+
+.progressbar-line {
+  content: '';
+  height: 3px;
+  left: 0;
+  right: 0;
+  background: #fff;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+}
+
+.progressbar-point {
+  background: #fff;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e66465;
+  position: relative;
+}
+
+
+
+.progressbar-point.active {
+  color: #fff;
+  background-color: rgb(44, 145, 63);
+}
+
+.hide {
+  display: none;
+}
+
+.card.active {
+  animation: slide 500ms ease-in-out backwards;
+}
+
+
+
+
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: scale(95%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(100%);
+  }
+}
+
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+    transform: scale(100%);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(95%);
+  }
+}
